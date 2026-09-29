@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<title>Rocktally رازداری کی پالیسی</title>
+<meta name="description" content="Rocktally کی Android ایپ کے لیے رازداری کی پالیسی۔">
+<link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/privacy/">
+<link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/privacy/">
+<link rel="alternate" hreflang="es" href="https://kuschikuschbert.github.io/rocktally/es/privacy/">
+<link rel="alternate" hreflang="id" href="https://kuschikuschbert.github.io/rocktally/id/privacy/">
+<link rel="alternate" hreflang="ms" href="https://kuschikuschbert.github.io/rocktally/ms/privacy/">
+<link rel="alternate" hreflang="pt" href="https://kuschikuschbert.github.io/rocktally/pt/privacy/">
+<link rel="alternate" hreflang="tr" href="https://kuschikuschbert.github.io/rocktally/tr/privacy/">
+<link rel="alternate" hreflang="ur" href="https://kuschikuschbert.github.io/rocktally/ur/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="canonical" href="https://kuschikuschbert.github.io/rocktally/ur/privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Outfit:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap">
+<style>
+:root {
+  --bg: #F7F5F0;
+  --surface: #FFFFFF;
+  --line: #DEDAD0;
+  --ink: #1A1917;
+  --muted: #5E5B54;
+  --accent: #B86E00;
+  --track: #ECE8DF;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/2 "Noto Nastaliq Urdu", "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 0 20px;
+}
+main { max-width: 680px; margin: 0 auto; padding-block: 48px 72px; display: flex; flex-direction: column; gap: 36px; }
+header { display: flex; align-items: center; gap: 16px; }
+header svg { flex-shrink: 0; }
+h1, h2 { font-family: "Noto Nastaliq Urdu", Outfit, "DM Sans", system-ui, sans-serif; font-weight: 600; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.6; letter-spacing: 0; }
+h2 { font-size: 21px; line-height: 1.6; }
+.date { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+section { display: flex; flex-direction: column; gap: 10px; }
+p, ul { margin: 0; }
+ul { padding-inline-start: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.summary strong { font-family: "Noto Nastaliq Urdu", Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+th, td { text-align: start; vertical-align: top; padding-block: 10px; padding-inline: 0 12px; border-bottom: 1px solid var(--line); }
+th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: 0; text-transform: uppercase; }
+td:first-child { white-space: nowrap; font-weight: 500; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.contact { font-weight: 500; user-select: all; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
+.langs { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs a:hover, .langs a[aria-current] { color: var(--accent); }
+
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="56" height="56" viewBox="0 0 100 100" role="img" aria-label="Rocktally لوگو">
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
+      <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
+      <rect x="70" y="27" width="16" height="46" rx="8" fill="var(--ink)"></rect>
+      <path d="M74 38h8M78 34v8M74 62h8" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round" fill="none"></path>
+      <circle cx="30.8" cy="70.4" r="13" fill="var(--bg)"></circle>
+      <circle cx="30.8" cy="70.4" r="8.5" fill="var(--ink)"></circle>
+    </svg>
+    <div>
+      <h1><bdi>Rocktally</bdi> رازداری کی پالیسی</h1>
+      <p class="date">30 ستمبر 2026 سے نافذ</p>
+      <p class="date">یہ ترجمہ سہولت کے لیے ہے۔ اگر یہ انگریزی ورژن سے مختلف ہو تو <a href="/rocktally/privacy/">انگریزی ورژن</a> لاگو ہوگا۔</p>
+    </div>
+  </header>
+
+  <div class="summary">
+    <strong>مختصر بات</strong>
+    <p><bdi>Rocktally</bdi> آپ کی گنتی آپ کے فون پر ہی رکھتا ہے۔ اس میں نہ اکاؤنٹ ہے، نہ اشتہار، نہ اینالیٹکس، نہ ٹریکنگ، اور یہ انٹرنیٹ سے بالکل نہیں جڑتا۔ ہم آپ کا ڈیٹا کبھی نہیں دیکھتے، جب تک آپ خود ہمیں کچھ نہ بھیجیں، جیسے ای میل یا تشخیصی رپورٹ۔</p>
+  </div>
+
+  <section>
+    <h2>ہم کون ہیں</h2>
+    <p><bdi>Rocktally</bdi> ایک <bdi>Android</bdi> گنتی کی ایپ ہے جسے <bdi>Daniel Kuschmierz</bdi> نے بنایا ہے، جو راک ہیمپٹن، کوئنزلینڈ، آسٹریلیا میں ایک آزاد ڈویلپر ہیں۔ اس پالیسی میں "ہم" سے مراد ڈویلپر ہے اور "ایپ" سے مراد <bdi>Rocktally</bdi> ہے۔</p>
+  </section>
+
+  <section>
+    <h2>ایپ کیا محفوظ کرتی ہے</h2>
+    <p>نیچے دی گئی ہر چیز صرف آپ کے آلے پر ایپ کی نجی اسٹوریج میں محفوظ ہوتی ہے:</p>
+    <ul>
+      <li>آپ کے کاؤنٹرز: ان کے نام، گنتی، ہدف (اور یہ کہ ہدف نیا چکر شروع کرتا ہے یا حد ہے) اور سنگ میل، اور وہ گروپس جن میں آپ انہیں رکھتے ہیں (گروپس کے نام)۔</li>
+      <li>دبانے کی ہسٹری: ہر تبدیلی کا وقت، گنتی بڑھی یا کم ہوئی، کہاں سے آئی (والیوم بٹن، ٹیپ، ویجیٹ، نوٹیفکیشن) اور اس کے بعد کی گنتی۔</li>
+      <li>آپ کی ترتیبات، جیسے تھیم، رنگ، سونے کا وقت اور وائبریشن کے انتخاب۔</li>
+      <li>گنتی کے واقعات کا ایک مختصر تشخیصی لاگ، جو صرف میموری میں رہتا ہے اور ایپ بند ہونے پر مٹ جاتا ہے۔</li>
+      <li>جب آپ کوئی بیک اپ فائل بحال کرتے ہیں: اس سے ذرا پہلے فون پر جو کچھ تھا اس کی ایک کاپی، تاکہ بحالی کو کالعدم کیا جا سکے۔</li>
+    </ul>
+    <p>ایپ انٹرنیٹ کی اجازت نہیں مانگتی، اس لیے ایپ ان میں سے کچھ بھی کہیں نہیں بھیج سکتی۔</p>
+  </section>
+
+  <section>
+    <h2>ہم کیا جمع کرتے ہیں</h2>
+    <p>کچھ نہیں۔ ایپ کوئی ذاتی یا استعمال کا ڈیٹا نہ جمع کرتی ہے، نہ بھیجتی ہے، نہ بیچتی ہے، نہ شیئر کرتی ہے، اور اس میں کسی تیسرے فریق کے اینالیٹکس، اشتہار یا کریش رپورٹنگ کے ٹولز نہیں ہیں۔</p>
+    <p>ہم تک کچھ پہنچنے کا واحد راستہ یہ ہے کہ آپ خود اسے بھیجیں، مثلاً ای میل یا تشخیصی رپورٹ۔ دیکھیں: <a href="#contact-us">اگر آپ ہمیں ای میل یا تشخیصی رپورٹ بھیجیں</a>۔</p>
+  </section>
+
+  <section>
+    <h2>ڈیٹا آپ کے فون سے کب باہر جاتا ہے</h2>
+    <p>صرف تب جب آپ چاہیں:</p>
+    <ul>
+      <li><strong><bdi>CSV</bdi> ایکسپورٹ۔</strong> جب آپ ہسٹری ایکسپورٹ کرتے ہیں تو آپ خود چنتے ہیں کہ فائل کہاں محفوظ یا شیئر ہو۔ اس کے بعد اس کے ساتھ کیا ہوتا ہے، یہ آپ پر اور آپ کی چنی ہوئی ایپ یا سروس پر ہے۔</li>
+      <li><strong>بیک اپ فائل۔</strong> جب آپ بیک اپ محفوظ کرتے ہیں تو آپ خود چنتے ہیں کہ وہ کہاں جائے۔ ایپ پہلے آپ کے فون کا <bdi>Documents</bdi> فولڈر تجویز کرتی ہے۔ اگر آپ <bdi>Google Drive</bdi> جیسا آن لائن فولڈر چنیں تو وہ کاپی اس سروس کے پاس آپ کے اکاؤنٹ میں رہتی ہے۔ ہم اسے نہ دیکھ سکتے ہیں نہ حذف کر سکتے ہیں، اور جس کے ساتھ آپ اسے شیئر کریں وہ آپ کے کاؤنٹرز کے نام اور ہسٹری دیکھ سکتا ہے۔</li>
+      <li><strong>خودکار محفوظ۔</strong> اگر آپ اسے آن کریں (استعمال کا طریقہ اس کی پیشکش کرتا ہے) تو جس دن بھی آپ گنیں، ایپ وہی بیک اپ فائل آپ کے فون پر <bdi>Documents/Rocktally</bdi> میں، یا آپ کے چنے ہوئے فولڈر میں، محفوظ کرتی ہے اور آخری 7 فائلیں رکھتی ہے۔ <bdi>Documents</bdi> میں موجود فائلیں ایپ ان انسٹال کرنے کے بعد بھی رہتی ہیں، اور جن دوسری ایپس کو آپ اپنی فائلیں پڑھنے کی اجازت دیں وہ انہیں پڑھ سکتی ہیں۔ آپ کا چنا ہوا آن لائن فولڈر اوپر بتائے گئے طریقے سے کام کرتا ہے۔</li>
+      <li><strong>تشخیصی رپورٹ۔</strong> چھپی ہوئی تشخیصی اسکرین گنتی کے مسائل ٹھیک کرنے میں مدد کے لیے ایک رپورٹ بنا سکتی ہے۔ اسے کاپی یا شیئر کرنے سے پہلے ایپ دکھاتی ہے کہ اس میں کیا ہے اور آپ کی رضامندی مانگتی ہے۔ یہ صرف وہیں جاتی ہے جہاں آپ اسے پیسٹ کریں یا بھیجیں۔</li>
+      <li><strong><bdi>Android</bdi> بیک اپ۔</strong> اگر آپ کے فون کی ترتیبات میں <bdi>Android</bdi> بیک اپ آن ہے تو <bdi>Android</bdi>، <bdi>Rocktally</bdi> کے کاؤنٹرز، ترتیبات اور ہسٹری کو آپ کے اپنے <bdi>Google</bdi> بیک اپ یا ایک فون سے دوسرے فون میں منتقلی میں شامل کر سکتا ہے۔ وہ بیک اپ آپ کے <bdi>Google</bdi> اکاؤنٹ کا ہے، ہم اس تک نہیں پہنچ سکتے۔ آپ اپنے فون کی ترتیبات میں بیک اپ بند کر سکتے ہیں۔</li>
+    </ul>
+  </section>
+
+  <section id="contact-us">
+    <h2>اگر آپ ہمیں ای میل یا تشخیصی رپورٹ بھیجیں</h2>
+    <p>تشخیصی رپورٹ میں یہ شامل ہوتا ہے:</p>
+    <ul>
+      <li>ایپ کا ورژن اور یہ کہ یہ <bdi>Google Play</bdi> سے آئی یا نہیں۔</li>
+      <li>آپ کے فون کا ماڈل، <bdi>Android</bdi> ورژن اور سیکیورٹی پیچ۔</li>
+      <li>اسکرین کا سائز، فونٹ کا سائز، زبان اور گھڑی کا فارمیٹ۔</li>
+      <li>آپ کے فون پر <bdi>Rocktally</bdi> کی بیٹری، نوٹیفکیشن اور بیک گراؤنڈ کی ترتیبات۔</li>
+      <li>آڈیو آؤٹ پٹ کی قسم (اسپیکر، تار والا یا <bdi>Bluetooth</bdi>) اور موسیقی کا والیوم۔</li>
+      <li><bdi>Rocktally</bdi> کی اپنی ترتیبات، گنتی کی حالت، ایپ پچھلی بار کیسے بند ہوئی (مثلاً کریش، اوقات کے ساتھ)، رہنمائی والے ٹیسٹ کے نتائج اور تشخیصی لاگ (صرف اوقات اور گنتی کے واقعات)۔</li>
+    </ul>
+    <p>اس میں آپ کی گنتی، آپ کے کاؤنٹرز یا گروپس کے نام، آپ کی ہسٹری، رابطے، مقام یا کوئی اکاؤنٹ شامل نہیں ہوتا۔ زیر استعمال کاؤنٹر کا نام اور <bdi>Bluetooth</bdi> ڈیوائس کا نام شامل نہیں کیے جاتے، جب تک آپ شیئر کرنے سے پہلے انہیں آن نہ کریں۔</p>
+    <p>اگر آپ ہمیں رپورٹ یا ای میل بھیجیں:</p>
+    <ul>
+      <li>ہم اسے صرف آپ کو جواب دینے اور مسئلہ ٹھیک کرنے کے لیے استعمال کرتے ہیں۔ ہم اسے نہ بیچتے ہیں، نہ شیئر کرتے ہیں، نہ مارکیٹنگ کے لیے استعمال کرتے ہیں، نہ دوسرے ڈیٹا کے ساتھ ملاتے ہیں۔</li>
+      <li>مسئلہ حل ہونے پر ہم رپورٹ حذف کر دیتے ہیں۔ آپ کبھی بھی کہیں تو ہم اسے اور آپ کی ای میلز کو اس سے پہلے حذف کر دیں گے۔</li>
+      <li>ای میلز اور رپورٹس ہمارے <bdi>Gmail</bdi> ان باکس میں آتی ہیں، جسے <bdi>Google</bdi> ہوسٹ کرتا ہے۔</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>اجازتیں اور ان کی ضرورت کیوں ہے</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">اجازت</th><th scope="col">کیوں</th></tr></thead>
+        <tbody>
+          <tr><td>نوٹیفکیشن</td><td>گنتی کے دوران لائیو گنتی دکھاتا ہے، ایک کم کرنے، کاؤنٹر بدلنے یا روکنے کے بٹنوں کے ساتھ۔</td></tr>
+          <tr><td>فورگراؤنڈ سروس</td><td>اسکرین بند ہو یا کوئی دوسری ایپ کھلی ہو تب بھی آپ کے والیوم بٹن دبانے کو گنتی رہتی ہے۔ آپ اسے شروع کرتے ہیں، اور آپ کے مقرر کردہ خاموشی کے وقت کے بعد یہ خود رک جاتی ہے۔</td></tr>
+          <tr><td>لائیو اپڈیٹس (<bdi>Android</bdi> 16 اور نئے)</td><td>گنتی بیدار ہونے کے دوران گنتی کے نوٹیفکیشن کو اسٹیٹس بار میں گنتی اور پیش رفت دکھانے دیتا ہے۔ اس کے لیے اجازت نہیں مانگی جاتی، آپ اسے <bdi>Rocktally</bdi> یا <bdi>Android</bdi> کی ترتیبات میں بند کر سکتے ہیں۔</td></tr>
+          <tr><td>وائبریشن</td><td>ہر بار دبانے، سنگ میل، ہدف اور حد پر وائبریشن دیتی ہے، تاکہ آپ بغیر دیکھے گن سکیں۔</td></tr>
+          <tr><td>دوسری ایپس کے اوپر دکھانا</td><td>اختیاری ہے اور شروع میں بند ہوتا ہے۔ اگر آپ اسے آن کریں تو دوسری ایپس کے اوپر گنتی کا ایک چھوٹا ڈسپلے دکھاتا ہے۔</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>اپنا ڈیٹا حذف کرنا</h2>
+    <p>ایپ میں کوئی کاؤنٹر حذف کریں تو وہ اور اس کی ہسٹری ختم ہو جاتی ہے، یا <bdi>Rocktally</bdi> ان انسٹال کریں تو اس کی محفوظ کی ہوئی ہر چیز ختم ہو جاتی ہے۔ <bdi>Android</bdi> کی ترتیبات میں ایپ کی اسٹوریج صاف کرنے سے بھی یہی ہوتا ہے۔</p>
+  </section>
+
+  <section>
+    <h2>بچے</h2>
+    <p><bdi>Rocktally</bdi> عام استعمال کی ایک ایپ ہے۔ یہ کسی سے بھی کوئی ڈیٹا جمع نہیں کرتی، بچوں سے بھی نہیں۔</p>
+  </section>
+
+  <section>
+    <h2>اس پالیسی میں تبدیلیاں</h2>
+    <p>اگر ایپ کبھی ڈیٹا کو سنبھالنے کا طریقہ بدلے تو پہلے یہ صفحہ اپڈیٹ ہوگا اور اوپر دی گئی نفاذ کی تاریخ بدل جائے گی۔</p>
+  </section>
+
+  <section>
+    <h2>رابطہ</h2>
+    <p>رازداری کے بارے میں سوالات: <span class="contact" dir="ltr">rocktallyapp@gmail.com</span></p>
+  </section>
+
+  <footer><bdi>Android</bdi> کے لیے <bdi>Rocktally</bdi> · راک ہیمپٹن، کوئنزلینڈ میں بنایا گیا
+    <nav class="langs" aria-label="زبان"><a href="/rocktally/privacy/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/privacy/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/privacy/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/privacy/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/privacy/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/privacy/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/privacy/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/privacy/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/privacy/" hreflang="ur" lang="ur" aria-current="page">اردو</a></nav>
+  </footer>
+</main>
+</body>
+</html>

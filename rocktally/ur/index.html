@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en-AU">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rocktally</title>
-<meta name="description" content="Rocktally: a tally counter for Android you use with your volume keys, screen off, music on.">
-<link rel="canonical" href="https://kuschikuschbert.github.io/rocktally/">
+<meta name="description" content="Rocktally: Android کے لیے گنتی کی ایپ جسے آپ والیوم بٹن سے چلاتے ہیں، اسکرین بند اور موسیقی چلتی ہوئی۔">
 <link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/">
 <link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/">
 <link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/">
@@ -16,9 +15,10 @@
 <link rel="alternate" hreflang="tr" href="https://kuschikuschbert.github.io/rocktally/tr/">
 <link rel="alternate" hreflang="ur" href="https://kuschikuschbert.github.io/rocktally/ur/">
 <link rel="alternate" hreflang="x-default" href="https://kuschikuschbert.github.io/rocktally/">
+<link rel="canonical" href="https://kuschikuschbert.github.io/rocktally/ur/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Outfit:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap">
 <style>
 :root {
   --bg: #F7F5F0;
@@ -44,25 +44,25 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.65 "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font: 16px/2 "Noto Nastaliq Urdu", "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   padding: 0 20px;
 }
 main { max-width: 680px; margin: 0 auto; padding-block: 48px 72px; display: flex; flex-direction: column; gap: 36px; }
 header { display: flex; align-items: center; gap: 16px; }
 header svg { flex-shrink: 0; }
-h1, h2 { font-family: Outfit, "DM Sans", system-ui, sans-serif; font-weight: 600; text-wrap: balance; margin: 0; }
-h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.15; letter-spacing: -0.02em; }
-h2 { font-size: 21px; line-height: 1.3; }
+h1, h2 { font-family: "Noto Nastaliq Urdu", Outfit, "DM Sans", system-ui, sans-serif; font-weight: 600; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.6; letter-spacing: 0; }
+h2 { font-size: 21px; line-height: 1.6; }
 .date { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
 section { display: flex; flex-direction: column; gap: 10px; }
 p, ul { margin: 0; }
-ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+ul { padding-inline-start: 1.2em; display: flex; flex-direction: column; gap: 6px; }
 .summary { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
-.summary strong { font-family: Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; }
+.summary strong { font-family: "Noto Nastaliq Urdu", Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; }
 table { border-collapse: collapse; width: 100%; font-size: 15px; }
 .table-wrap { overflow-x: auto; }
-th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
-th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+th, td { text-align: start; vertical-align: top; padding-block: 10px; padding-inline: 0 12px; border-bottom: 1px solid var(--line); }
+th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: 0; text-transform: uppercase; }
 td:first-child { white-space: nowrap; font-weight: 500; }
 a { color: var(--accent); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
@@ -85,7 +85,7 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 <body>
 <main>
   <section class="hero">
-    <svg width="96" height="96" viewBox="0 0 100 100" role="img" aria-label="Rocktally logo">
+    <svg width="96" height="96" viewBox="0 0 100 100" role="img" aria-label="Rocktally لوگو">
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
       <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
@@ -95,30 +95,30 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <circle cx="30.8" cy="70.4" r="8.5" fill="var(--ink)"></circle>
     </svg>
     <h1>Rocktally</h1>
-    <p class="lede">A tally counter you use without looking. Volume Up adds one, Volume Down takes one off, with the screen off and your music still playing.</p>
+    <p class="lede">ایسا کاؤنٹر جو بغیر دیکھے چلتا ہے۔ والیوم اوپر کا بٹن ایک بڑھاتا ہے، والیوم نیچے کا بٹن ایک کم کرتا ہے، چاہے اسکرین بند ہو اور آپ کی موسیقی چل رہی ہو۔</p>
     <div class="links">
-      <a href="privacy/">Privacy policy</a>
+      <a href="privacy/">رازداری کی پالیسی</a>
     </div>
   </section>
   <div class="summary">
-    <strong>Private by design</strong>
-    <p>No account, no ads, no tracking. Rocktally doesn't use the internet, so your counts never leave your phone.</p>
+    <strong>شروع سے ہی نجی</strong>
+    <p>نہ اکاؤنٹ، نہ اشتہار، نہ ٹریکنگ۔ <bdi>Rocktally</bdi> انٹرنیٹ استعمال نہیں کرتا، اس لیے آپ کی گنتی کبھی آپ کے فون سے باہر نہیں جاتی۔</p>
   </div>
   <section>
-    <h2>Support</h2>
-    <p>Questions or feedback: <span class="contact">rocktallyapp@gmail.com</span></p>
+    <h2>مدد</h2>
+    <p>سوالات یا رائے: <span class="contact" dir="ltr">rocktallyapp@gmail.com</span></p>
   </section>
   <section>
-    <h2>Buy me a coffee</h2>
-    <p>Rocktally is free, with no ads and nothing to unlock, and it stays that way. It's made by one person in Rockhampton in his spare time. If it saves you a clicker or a headache, you can leave a small tip. Thank you.</p>
+    <h2>مجھے ایک کافی پلائیں</h2>
+    <p><bdi>Rocktally</bdi> مفت ہے۔ نہ اشتہار ہیں، نہ کچھ خرید کر کھولنا پڑتا ہے، اور یہ ایسا ہی رہے گا۔ اسے راک ہیمپٹن میں ایک شخص اپنے فارغ وقت میں بناتا ہے۔ اگر اس سے آپ کا کلکر خریدنے کا خرچ یا کوئی درد سر بچ جائے تو آپ چھوٹی سی ٹپ دے سکتے ہیں۔ شکریہ۔</p>
     <div class="links">
       <!-- Replace KOFI_NAME with the Ko-fi page name before this goes live -->
-      <a href="https://ko-fi.com/KOFI_NAME" rel="noopener">Tip on Ko-fi</a>
+      <a href="https://ko-fi.com/KOFI_NAME" rel="noopener"><bdi>Ko-fi</bdi> پر ٹپ دیں</a>
     </div>
-    <p class="date">Tips go through Ko-fi and PayPal or Stripe, not through the app. They don't unlock anything; the app is the same for everyone.</p>
+    <p class="date">ٹپ <bdi>Ko-fi</bdi> اور <bdi>PayPal</bdi> یا <bdi>Stripe</bdi> کے ذریعے جاتی ہے، ایپ کے ذریعے نہیں۔ اس سے کچھ نہیں کھلتا، ایپ سب کے لیے ایک جیسی ہے۔</p>
   </section>
-  <footer>Rocktally for Android · Made in Rockhampton, Queensland
-    <nav class="langs" aria-label="Language"><a href="/rocktally/" hreflang="en" lang="en" aria-current="page">English</a><a href="/rocktally/ar/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/" hreflang="ur" lang="ur">اردو</a></nav>
+  <footer><bdi>Android</bdi> کے لیے <bdi>Rocktally</bdi> · راک ہیمپٹن، کوئنزلینڈ میں بنایا گیا
+    <nav class="langs" aria-label="زبان"><a href="/rocktally/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/" hreflang="ur" lang="ur" aria-current="page">اردو</a></nav>
   </footer>
 </main>
 </body>
