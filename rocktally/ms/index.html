@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rocktally</title>
-<meta name="description" content="Rocktally: pembilang untuk Android yang anda gunakan dengan butang kelantangan, walaupun skrin mati dan muzik sedang dimainkan.">
+<meta name="description" content="Rocktally: pembilang tally percuma untuk Android yang anda gunakan dengan butang kelantangan, skrin mati, muzik terus dimainkan. Untuk zikir dan tasbih, pintu dan dewan, lap dan baris. Tiada iklan, tiada internet.">
 <link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/">
 <link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/">
 <link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/">
@@ -74,18 +74,35 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 
 </style>
 <style>
-.hero { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.hero { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; }
 .hero h1 { font-size: clamp(40px, 9vw, 56px); }
-.lede { font-size: 19px; color: var(--muted); max-width: 34ch; }
+.lede { font-size: 18px; color: var(--muted); max-width: 36ch; }
 .links { display: flex; flex-wrap: wrap; gap: 12px; }
 .links a { display: inline-block; padding: 12px 18px; border-radius: 24px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 500; }
 .links a:hover { border-color: var(--accent); }
+.play { display: inline-flex; align-items: center; gap: 10px; background: #1A1917; color: #fff; border-radius: 12px; padding: 10px 18px 10px 14px; text-decoration: none; line-height: 1.15; min-height: 48px; box-sizing: border-box; }
+.play small { display: block; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; }
+.play b { font: 600 19px Outfit, "DM Sans", sans-serif; }
+:root[data-theme="dark"] .play { outline: 1px solid var(--line); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .play { outline: 1px solid var(--line); } }
+.shot { display: block; border-radius: 22px; border: 1px solid var(--line); height: auto; }
+.hero .shot { width: min(240px, 62vw); margin-top: 6px; }
+.label { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin: 0; }
+.uses { display: flex; flex-direction: column; gap: 14px; }
+.use { display: flex; gap: 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 14px; }
+.use .shot { width: 104px; flex-shrink: 0; border-radius: 14px; }
+.use h3 { font-family: Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; margin: 0 0 4px; }
+.use p { color: var(--muted); font-size: 15px; line-height: 1.5; }
+.checks { list-style: none; padding: 0; gap: 8px; }
+.checks li { display: flex; gap: 10px; }
+.checks li::before { content: "\2713"; color: var(--accent); font-weight: 700; }
+@media (min-width: 640px) { .use .shot { width: 140px; } }
 </style>
 </head>
 <body>
 <main>
   <section class="hero">
-    <svg width="96" height="96" viewBox="0 0 100 100" role="img" aria-label="Logo Rocktally">
+    <svg width="72" height="72" viewBox="0 0 100 100" role="img" aria-label="Logo Rocktally">
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
       <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
@@ -96,18 +113,49 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
     </svg>
     <h1>Rocktally</h1>
     <p class="lede">Pembilang yang anda gunakan tanpa perlu melihat. Naikkan Kelantangan menambah satu, Turunkan Kelantangan menolak satu, walaupun skrin mati dan muzik anda masih dimainkan.</p>
-    <div class="links">
-      <a href="privacy/">Dasar privasi</a>
+    <a class="play" href="https://play.google.com/store/apps/details?id=com.kuschi.volumecounter" rel="noopener">
+      <svg width="22" height="24" viewBox="0 0 18 20" aria-hidden="true"><path d="M1 1l10 9-10 9z" fill="#34A853"/><path d="M1 1l13 7-3 2z" fill="#4285F4"/><path d="M1 19l13-7-3-2z" fill="#EA4335"/><path d="M14 8l3 2-3 2-3-2z" fill="#FBBC04"/></svg>
+      <span><small>Dapatkannya di</small><b>Google Play</b></span>
+    </a>
+    <img class="shot" src="/rocktally/img/ms/dial.webp" width="480" height="909" alt="Rocktally mengira Subhanallah: 31 daripada 33">
+  </section>
+
+  <section>
+    <p class="label">Digunakan untuk mengira</p>
+    <div class="uses">
+      <div class="use">
+        <img class="shot" src="/rocktally/img/ms/target.webp" width="480" height="909" alt="Satu pusingan selesai: sasaran dicapai" loading="lazy">
+        <div><h3>Untuk doa dan zikir</h3><p>Kira zikir dengan butang kelantangan, mata terpejam dan skrin mati. Tetapkan 33 atau 100, rasai getaran perayaan apabila satu pusingan selesai, kemudian teruskan dengan warna baharu.</p></div>
+      </div>
+      <div class="use">
+        <img class="shot" src="/rocktally/img/ms/limit.webp" width="480" height="909" alt="Pembilang pintu yang terlebih 12 daripada hadnya" loading="lazy">
+        <div><h3>Untuk pintu dan dewan</h3><p>Naikkan Kelantangan untuk masuk, Turunkan Kelantangan untuk keluar. Tetapkan Had mengikut kapasiti anda: lihat berapa ramai di dalam sekarang dan berapa ramai masuk hari ini, dan ia bertukar merah dengan getaran lebih kuat apabila terlebih.</p></div>
+      </div>
+      <div class="use">
+        <img class="shot" src="/rocktally/img/ms/groups.webp" width="480" height="909" alt="Empat pembilang bas dalam kumpulan Lawatan sekolah" loading="lazy">
+        <div><h3>Untuk sukan, kraf dan kerja</h3><p>Lap, ulangan dan set tanpa membuka kunci telefon, baris dan mata jahitan, kanak-kanak naik bas, burung, kiraan stok: apa sahaja yang anda kira.</p></div>
+      </div>
     </div>
   </section>
-  <div class="summary">
-    <strong>Direka untuk privasi</strong>
-    <p>Tiada akaun, tiada iklan, tiada penjejakan. Rocktally tidak menggunakan internet, jadi kiraan anda tidak pernah keluar dari telefon anda.</p>
-  </div>
+
   <section>
-    <h2>Sokongan</h2>
-    <p>Soalan atau maklum balas: <span class="contact">rocktallyapp@gmail.com</span></p>
+    <p class="label">Selain itu</p>
+    <ul class="checks">
+      <li>Pembilang bernama sebanyak yang anda mahu, percuma, dalam kumpulan dengan jumlah bagi setiap kumpulan</li>
+      <li>Sasaran dengan pusingan, atau Had untuk kapasiti</li>
+      <li>Tetapkan kiraan sendiri, tahan nombor untuk set semula, Buat asal untuk semua</li>
+      <li>Kiraan langsung pada skrin kunci, jubin Tetapan Pantas dan dua widget skrin utama</li>
+      <li>Sejarah mengikut hari dan jam, eksport CSV, fail sandaran dan simpan automatik harian</li>
+      <li>Dalam 9 bahasa, tema cerah atau gelap, pada telefon, peranti boleh lipat dan telefon flip</li>
+    </ul>
   </section>
+
+  <div class="summary">
+    <strong>Tiada iklan. Tiada langganan. Tiada akaun. Tiada internet.</strong>
+    <p>Rocktally tidak pernah bersambung ke internet, jadi kiraan anda tidak pernah keluar dari telefon anda.</p>
+    <p><a href="privacy/">Dasar privasi</a></p>
+  </div>
+
   <section>
     <h2>Belanja saya kopi</h2>
     <p>Rocktally percuma, tanpa iklan dan tiada apa-apa yang perlu dibuka kunci, dan ia akan kekal begitu. Ia dibuat oleh seorang individu di Rockhampton pada masa lapangnya. Jika ia menjimatkan kos alat pembilang atau mengelakkan anda daripada pening kepala, anda boleh memberikan sedikit tip. Terima kasih.</p>
@@ -116,6 +164,11 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <a href="https://ko-fi.com/KOFI_NAME" rel="noopener">Beri tip di Ko-fi</a>
     </div>
     <p class="date">Tip dibayar melalui Ko-fi dan PayPal atau Stripe, bukan melalui apl. Tip tidak membuka kunci apa-apa; apl ini sama untuk semua orang.</p>
+  </section>
+
+  <section>
+    <h2>Sokongan</h2>
+    <p>Soalan atau maklum balas: <span class="contact">rocktallyapp@gmail.com</span></p>
   </section>
   <footer>Rocktally untuk Android · Dibuat di Rockhampton, Queensland
     <nav class="langs" aria-label="Bahasa"><a href="/rocktally/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/" hreflang="ms" lang="ms" aria-current="page">Bahasa Melayu</a><a href="/rocktally/pt/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/" hreflang="ur" lang="ur">اردو</a></nav>

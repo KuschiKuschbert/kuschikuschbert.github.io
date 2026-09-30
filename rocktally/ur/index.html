@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rocktally</title>
-<meta name="description" content="Rocktally: Android کے لیے گنتی کی ایپ جسے آپ والیوم بٹن سے چلاتے ہیں، اسکرین بند ہو اور موسیقی چلتی رہے۔">
+<meta name="description" content="Rocktally: Android کے لیے مفت ٹیلی کاؤنٹر جسے آپ والیوم بٹن سے چلاتے ہیں، اسکرین بند اور موسیقی جاری۔ تسبیح اور ذکر، دروازوں اور تقریب گاہوں، لیپس اور قطاروں کے لیے۔ نہ اشتہار، نہ انٹرنیٹ۔">
 <link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/">
 <link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/">
 <link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/">
@@ -74,18 +74,42 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 
 </style>
 <style>
-.hero { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.hero { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; }
 .hero h1 { font-size: clamp(40px, 9vw, 56px); }
-.lede { font-size: 19px; color: var(--muted); max-width: 34ch; }
+.lede { font-size: 18px; color: var(--muted); max-width: 36ch; }
 .links { display: flex; flex-wrap: wrap; gap: 12px; }
 .links a { display: inline-block; padding: 12px 18px; border-radius: 24px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 500; }
 .links a:hover { border-color: var(--accent); }
+.play { display: inline-flex; align-items: center; gap: 10px; background: #1A1917; color: #fff; border-radius: 12px; padding: 10px 18px 10px 14px; text-decoration: none; line-height: 1.15; min-height: 48px; box-sizing: border-box; }
+.play small { display: block; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; }
+.play b { font: 600 19px Outfit, "DM Sans", sans-serif; }
+:root[data-theme="dark"] .play { outline: 1px solid var(--line); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .play { outline: 1px solid var(--line); } }
+.shot { display: block; border-radius: 22px; border: 1px solid var(--line); height: auto; }
+.hero .shot { width: min(240px, 62vw); margin-top: 6px; }
+.label { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin: 0; }
+.uses { display: flex; flex-direction: column; gap: 14px; }
+.use { display: flex; gap: 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 14px; }
+.use .shot { width: 104px; flex-shrink: 0; border-radius: 14px; }
+.use h3 { font-family: Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; margin: 0 0 4px; }
+.use p { color: var(--muted); font-size: 15px; line-height: 1.5; }
+.checks { list-style: none; padding: 0; gap: 8px; }
+.checks li { display: flex; gap: 10px; }
+.checks li::before { content: "\2713"; color: var(--accent); font-weight: 700; }
+@media (min-width: 640px) { .use .shot { width: 140px; } }
+.label, .play small { letter-spacing: 0; }
+.play { padding: 10px 14px 10px 18px; line-height: 1.6; }
+.use h3, .play b, .summary strong { font-family: Outfit, "DM Sans", "Noto Nastaliq Urdu", sans-serif; }
+.hero h1 { line-height: 1.6; }
+.lede { line-height: 2; }
+.use h3 { line-height: 1.8; }
+.use p { line-height: 2; }
 </style>
 </head>
 <body>
 <main>
   <section class="hero">
-    <svg width="96" height="96" viewBox="0 0 100 100" role="img" aria-label="Rocktally لوگو">
+    <svg width="72" height="72" viewBox="0 0 100 100" role="img" aria-label="Rocktally لوگو">
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
       <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
@@ -96,18 +120,49 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
     </svg>
     <h1>Rocktally</h1>
     <p class="lede">ایسا کاؤنٹر جسے آپ بغیر دیکھے استعمال کرتے ہیں۔ والیوم اوپر کا بٹن ایک بڑھاتا ہے، والیوم نیچے کا بٹن ایک کم کرتا ہے، چاہے اسکرین بند ہو اور آپ کی موسیقی چل رہی ہو۔</p>
-    <div class="links">
-      <a href="privacy/">رازداری کی پالیسی</a>
+    <a class="play" href="https://play.google.com/store/apps/details?id=com.kuschi.volumecounter" rel="noopener">
+      <svg width="22" height="24" viewBox="0 0 18 20" aria-hidden="true"><path d="M1 1l10 9-10 9z" fill="#34A853"/><path d="M1 1l13 7-3 2z" fill="#4285F4"/><path d="M1 19l13-7-3-2z" fill="#EA4335"/><path d="M14 8l3 2-3 2-3-2z" fill="#FBBC04"/></svg>
+      <span><small>اب دستیاب</small><b>Google Play</b></span>
+    </a>
+    <img class="shot" src="/rocktally/img/ur/dial.webp" width="480" height="909" alt="Rocktally میں سبحان اللہ کی گنتی: 33 میں سے 31">
+  </section>
+
+  <section>
+    <p class="label">لوگ اس سے کیا گنتے ہیں</p>
+    <div class="uses">
+      <div class="use">
+        <img class="shot" src="/rocktally/img/ur/target.webp" width="480" height="909" alt="ایک چکر مکمل: ہدف پورا ہو گیا" loading="lazy">
+        <div><h3>تسبیح اور ذکر کے لیے</h3><p>والیوم بٹن سے ذکر گنیں، آنکھیں بند اور اسکرین بند۔ 33 یا 100 کا ہدف رکھیں، چکر پورا ہونے پر جشن کی وائبریشن محسوس کریں، پھر نئے رنگ میں جاری رکھیں۔</p></div>
+      </div>
+      <div class="use">
+        <img class="shot" src="/rocktally/img/ur/limit.webp" width="480" height="909" alt="دروازے کا کاؤنٹر جو اپنی حد سے 12 اوپر ہے" loading="lazy">
+        <div><h3>دروازوں اور تقریب گاہوں کے لیے</h3><p>اندر آنے پر والیوم اوپر، باہر جانے پر والیوم نیچے۔ اپنی گنجائش کے لیے حد رکھیں: دیکھیں کہ ابھی کتنے اندر ہیں اور آج کتنے اندر آئے، اور حد سے اوپر جانے پر یہ سرخ ہو جاتا ہے اور زیادہ زور سے وائبریٹ کرتا ہے۔</p></div>
+      </div>
+      <div class="use">
+        <img class="shot" src="/rocktally/img/ur/groups.webp" width="480" height="909" alt="اسکول ٹرپ گروپ میں بس کے چار کاؤنٹر" loading="lazy">
+        <div><h3>کھیل، دستکاری اور کام کے لیے</h3><p>فون ان لاک کیے بغیر لیپس، ریپس اور سیٹس، قطاریں اور ٹانکے، بس میں سوار ہوتے بچے، پرندے، اسٹاک کی گنتی: جو کچھ بھی آپ گنیں۔</p></div>
+      </div>
     </div>
   </section>
-  <div class="summary">
-    <strong>شروع سے ہی نجی</strong>
-    <p>نہ اکاؤنٹ، نہ اشتہار، نہ ٹریکنگ۔ <bdi>Rocktally</bdi> انٹرنیٹ استعمال نہیں کرتا، اس لیے آپ کی گنتی کبھی آپ کے فون سے باہر نہیں جاتی۔</p>
-  </div>
+
   <section>
-    <h2>مدد</h2>
-    <p>سوالات یا رائے: <span class="contact" dir="ltr">rocktallyapp@gmail.com</span></p>
+    <p class="label">اور بھی بہت کچھ</p>
+    <ul class="checks">
+      <li>جتنے چاہیں نام والے کاؤنٹر، مفت، گروپوں میں اور ہر گروپ کا کل</li>
+      <li>چکروں کے ساتھ ہدف، یا گنجائش کے لیے حد</li>
+      <li>گنتی خود درج کریں، صفر کرنے کے لیے عدد کو دبائے رکھیں، اور ہر کام کالعدم کریں</li>
+      <li>لاک اسکرین پر لائیو گنتی، فوری ترتیبات ٹائل اور ہوم اسکرین کے دو ویجیٹ</li>
+      <li><span>دن اور گھنٹے کے حساب سے ہسٹری، <bdi>CSV</bdi> ایکسپورٹ، بیک اپ فائلیں اور روزانہ خودکار بیک اپ</span></li>
+      <li>9 زبانوں میں، ہلکی یا گہری تھیم، فون، فولڈ ایبل اور فلپ فون پر</li>
+    </ul>
   </section>
+
+  <div class="summary">
+    <strong>نہ اشتہار۔ نہ سبسکرپشن۔ نہ اکاؤنٹ۔ نہ انٹرنیٹ۔</strong>
+    <p><bdi>Rocktally</bdi> کبھی انٹرنیٹ سے نہیں جڑتا، اس لیے آپ کی گنتی کبھی آپ کے فون سے باہر نہیں جاتی۔</p>
+    <p><a href="privacy/">رازداری کی پالیسی</a></p>
+  </div>
+
   <section>
     <h2>مجھے ایک کافی پلائیں</h2>
     <p><bdi>Rocktally</bdi> مفت ہے۔ نہ اشتہار ہیں، نہ کچھ خرید کر کھولنا پڑتا ہے، اور یہ ایسا ہی رہے گا۔ اسے راک ہیمپٹن میں ایک شخص اپنے فارغ وقت میں بناتا ہے۔ اگر اس سے آپ کا کلکر خریدنے کا خرچ یا کوئی دردِ سر بچ جائے تو آپ چھوٹی سی ٹپ دے سکتے ہیں۔ شکریہ۔</p>
@@ -116,6 +171,11 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <a href="https://ko-fi.com/KOFI_NAME" rel="noopener"><bdi>Ko-fi</bdi> پر ٹپ دیں</a>
     </div>
     <p class="date">ٹپ <bdi>Ko-fi</bdi> اور <bdi>PayPal</bdi> یا <bdi>Stripe</bdi> کے ذریعے جاتی ہے، ایپ کے ذریعے نہیں۔ اس سے کچھ نہیں کھلتا، ایپ سب کے لیے ایک جیسی ہے۔</p>
+  </section>
+
+  <section>
+    <h2>مدد</h2>
+    <p>سوالات یا رائے: <span class="contact" dir="ltr">rocktallyapp@gmail.com</span></p>
   </section>
   <footer><bdi>Android</bdi> کے لیے <bdi>Rocktally</bdi> · راک ہیمپٹن، کوئنزلینڈ میں بنایا گیا
     <nav class="langs" aria-label="زبان"><a href="/rocktally/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/" hreflang="ur" lang="ur" aria-current="page">اردو</a></nav>

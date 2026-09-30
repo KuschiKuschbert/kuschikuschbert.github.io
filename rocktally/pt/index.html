@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rocktally</title>
-<meta name="description" content="Rocktally: um contador para Android que você usa com os botões de volume, com a tela desligada e a música tocando.">
+<meta name="description" content="Rocktally: um contador grátis para Android que você usa com os botões de volume, com a tela desligada e a música tocando. Para dhikr e tasbih, portarias e locais, voltas e carreiras. Sem anúncios, sem internet.">
 <link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/">
 <link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/">
 <link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/">
@@ -74,18 +74,35 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 
 </style>
 <style>
-.hero { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.hero { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; }
 .hero h1 { font-size: clamp(40px, 9vw, 56px); }
-.lede { font-size: 19px; color: var(--muted); max-width: 34ch; }
+.lede { font-size: 18px; color: var(--muted); max-width: 36ch; }
 .links { display: flex; flex-wrap: wrap; gap: 12px; }
 .links a { display: inline-block; padding: 12px 18px; border-radius: 24px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 500; }
 .links a:hover { border-color: var(--accent); }
+.play { display: inline-flex; align-items: center; gap: 10px; background: #1A1917; color: #fff; border-radius: 12px; padding: 10px 18px 10px 14px; text-decoration: none; line-height: 1.15; min-height: 48px; box-sizing: border-box; }
+.play small { display: block; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; }
+.play b { font: 600 19px Outfit, "DM Sans", sans-serif; }
+:root[data-theme="dark"] .play { outline: 1px solid var(--line); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .play { outline: 1px solid var(--line); } }
+.shot { display: block; border-radius: 22px; border: 1px solid var(--line); height: auto; }
+.hero .shot { width: min(240px, 62vw); margin-top: 6px; }
+.label { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin: 0; }
+.uses { display: flex; flex-direction: column; gap: 14px; }
+.use { display: flex; gap: 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 14px; }
+.use .shot { width: 104px; flex-shrink: 0; border-radius: 14px; }
+.use h3 { font-family: Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; margin: 0 0 4px; }
+.use p { color: var(--muted); font-size: 15px; line-height: 1.5; }
+.checks { list-style: none; padding: 0; gap: 8px; }
+.checks li { display: flex; gap: 10px; }
+.checks li::before { content: "\2713"; color: var(--accent); font-weight: 700; }
+@media (min-width: 640px) { .use .shot { width: 140px; } }
 </style>
 </head>
 <body>
 <main>
   <section class="hero">
-    <svg width="96" height="96" viewBox="0 0 100 100" role="img" aria-label="Logotipo do Rocktally">
+    <svg width="72" height="72" viewBox="0 0 100 100" role="img" aria-label="Logotipo do Rocktally">
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
       <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
       <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
@@ -96,18 +113,49 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
     </svg>
     <h1>Rocktally</h1>
     <p class="lede">Um contador que você usa sem olhar. Aumentar volume soma um, Diminuir volume tira um, com a tela desligada e a sua música ainda tocando.</p>
-    <div class="links">
-      <a href="privacy/">Política de privacidade</a>
+    <a class="play" href="https://play.google.com/store/apps/details?id=com.kuschi.volumecounter" rel="noopener">
+      <svg width="22" height="24" viewBox="0 0 18 20" aria-hidden="true"><path d="M1 1l10 9-10 9z" fill="#34A853"/><path d="M1 1l13 7-3 2z" fill="#4285F4"/><path d="M1 19l13-7-3-2z" fill="#EA4335"/><path d="M14 8l3 2-3 2-3-2z" fill="#FBBC04"/></svg>
+      <span><small>Disponível no</small><b>Google Play</b></span>
+    </a>
+    <img class="shot" src="/rocktally/img/pt/dial.webp" width="480" height="909" alt="Rocktally contando Crianças no ônibus: 26 de 28">
+  </section>
+
+  <section>
+    <p class="label">O que as pessoas contam com ele</p>
+    <div class="uses">
+      <div class="use">
+        <img class="shot" src="/rocktally/img/pt/target.webp" width="480" height="909" alt="Uma rodada concluída: meta atingida" loading="lazy">
+        <div><h3>Para oração e dhikr</h3><p>Conte dhikr com o botão de volume, de olhos fechados e com a tela desligada. Defina 33 ou 100, sinta a vibração de comemoração quando uma rodada termina e continue em uma nova cor.</p></div>
+      </div>
+      <div class="use">
+        <img class="shot" src="/rocktally/img/pt/limit.webp" width="480" height="909" alt="Um contador de porta 12 acima do limite" loading="lazy">
+        <div><h3>Para portarias e locais</h3><p>Aumentar volume para quem entra, Diminuir volume para quem sai. Defina um Limite para a lotação: veja quantas pessoas estão dentro agora e quantas entraram hoje, e ele fica vermelho com uma vibração mais forte quando a contagem passa do limite.</p></div>
+      </div>
+      <div class="use">
+        <img class="shot" src="/rocktally/img/pt/groups.webp" width="480" height="909" alt="Quatro contadores de ônibus em um grupo Excursão da escola" loading="lazy">
+        <div><h3>Para esporte, artesanato e trabalho</h3><p>Voltas, repetições e séries sem desbloquear o telefone, carreiras e pontos, crianças entrando no ônibus, pássaros, inventário: tudo o que você contar.</p></div>
+      </div>
     </div>
   </section>
-  <div class="summary">
-    <strong>Feito para ser privado</strong>
-    <p>Sem conta, sem anúncios, sem rastreamento. O Rocktally não usa a internet, por isso as suas contagens nunca saem do seu telefone.</p>
-  </div>
+
   <section>
-    <h2>Suporte</h2>
-    <p>Dúvidas ou sugestões: <span class="contact">rocktallyapp@gmail.com</span></p>
+    <p class="label">E mais</p>
+    <ul class="checks">
+      <li>Quantos contadores com nome você quiser, grátis, em grupos com um total por grupo</li>
+      <li>Metas com rodadas, ou um Limite para a lotação</li>
+      <li>Digite uma contagem à mão, segure o número para zerar, e Desfazer para tudo</li>
+      <li>Contagem ao vivo na tela de bloqueio, um bloco de Configurações rápidas e dois widgets de tela inicial</li>
+      <li>Histórico por dia e por hora, exportação em CSV, arquivos de backup e backup automático diário</li>
+      <li>Em 9 idiomas, tema claro ou escuro, em telefones, dobráveis e telefones flip</li>
+    </ul>
   </section>
+
+  <div class="summary">
+    <strong>Sem anúncios. Sem assinatura. Sem conta. Sem internet.</strong>
+    <p>O Rocktally nunca se conecta à internet, por isso as suas contagens nunca saem do seu telefone.</p>
+    <p><a href="privacy/">Política de privacidade</a></p>
+  </div>
+
   <section>
     <h2>Ofereça um café</h2>
     <p>O Rocktally é gratuito, sem anúncios e sem nada para desbloquear, e vai continuar assim. É feito por uma única pessoa em Rockhampton, nas horas vagas. Se ele substituir um contador manual ou evitar uma dor de cabeça, você pode deixar uma pequena gorjeta. Obrigado.</p>
@@ -116,6 +164,11 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
       <a href="https://ko-fi.com/KOFI_NAME" rel="noopener">Dar uma gorjeta no Ko-fi</a>
     </div>
     <p class="date">As gorjetas passam pelo Ko-fi e pelo PayPal ou Stripe, não pelo app. Não desbloqueiam nada: o app é igual para todos.</p>
+  </section>
+
+  <section>
+    <h2>Suporte</h2>
+    <p>Dúvidas ou sugestões: <span class="contact">rocktallyapp@gmail.com</span></p>
   </section>
   <footer>Rocktally para Android · Feito em Rockhampton, Queensland
     <nav class="langs" aria-label="Idioma"><a href="/rocktally/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/" hreflang="pt" lang="pt" aria-current="page">Português</a><a href="/rocktally/tr/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/" hreflang="ur" lang="ur">اردو</a></nav>
