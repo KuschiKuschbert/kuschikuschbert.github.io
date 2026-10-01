@@ -27,17 +27,17 @@
   --ink: #1A1917;
   --muted: #5E5B54;
   --accent: #B86E00;
-  --track: #ECE8DF;
+  --track: #ECE8DF;  --on-accent: #FFFFFF;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+    --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31; --on-accent: #0E0E11;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+  --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31; --on-accent: #0E0E11;
   color-scheme: dark;
 }
 body {
@@ -98,6 +98,15 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 .checks li { display: flex; gap: 10px; }
 .checks li::before { content: "\2713"; color: var(--accent); font-weight: 700; }
 @media (min-width: 640px) { .use .shot { width: 140px; } }
+.join { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px; border-radius: 26px; background: var(--accent); color: var(--on-accent); text-decoration: none; font: 600 19px Outfit, "DM Sans", sans-serif; }
+.join:hover { filter: brightness(1.08); }
+.join-note { color: var(--muted); font-size: 15px; max-width: 34ch; margin: 0; }
+.join-note a, .demo { color: var(--accent); font-weight: 500; }
+.demo { display: inline-flex; align-items: center; min-height: 48px; text-decoration: underline; text-underline-offset: 3px; }
+.foot-play { display: flex; margin-top: 14px; }
+.play.soon { opacity: 0.6; min-height: 40px; padding: 6px 14px 6px 12px; }
+.play.soon b { font-size: 16px; }
+.join-note bdi { white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -114,10 +123,9 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
     </svg>
     <h1>Rocktally</h1>
     <p class="lede">A tally counter you use without looking. Volume Up adds one, Volume Down takes one off, with the screen off and your music still playing.</p>
-    <a class="play" href="https://play.google.com/store/apps/details?id=com.kuschi.rocktally" rel="noopener">
-      <svg width="22" height="24" viewBox="0 0 18 20" aria-hidden="true"><path d="M1 1l10 9-10 9z" fill="#34A853"/><path d="M1 1l13 7-3 2z" fill="#4285F4"/><path d="M1 19l13-7-3-2z" fill="#EA4335"/><path d="M14 8l3 2-3 2-3-2z" fill="#FBBC04"/></svg>
-      <span><small>Get it on</small><b>Google Play</b></span>
-    </a>
+    <a class="join" href="https://groups.google.com/g/rocktally-testers" rel="noopener">Join the free test</a>
+    <p class="join-note">Join the <a href="https://groups.google.com/g/rocktally-testers" rel="noopener">testers group</a>, then <a href="https://play.google.com/apps/testing/com.kuschi.rocktally" rel="noopener">become a tester on Google Play</a> and install.</p>
+    <a class="demo" href="https://www.youtube.com/watch?v=FI65yIKYSgc" rel="noopener">Watch the 1-minute demo</a>
     <img class="shot" src="/rocktally/img/en/dial.webp" width="480" height="909" alt="Rocktally counting Kids on bus: 26 of 28">
   </section>
 
@@ -172,6 +180,7 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
     <p>Questions or feedback: <span class="contact">rocktallyapp@gmail.com</span></p>
   </section>
   <footer>Rocktally for Android · Made in Rockhampton, Queensland
+    <div class="foot-play"><span class="play soon"><svg width="22" height="24" viewBox="0 0 18 20" aria-hidden="true"><path d="M1 1l10 9-10 9z" fill="#34A853"/><path d="M1 1l13 7-3 2z" fill="#4285F4"/><path d="M1 19l13-7-3-2z" fill="#EA4335"/><path d="M14 8l3 2-3 2-3-2z" fill="#FBBC04"/></svg><span><small>After the test on</small><b>Google Play</b></span></span></div>
     <nav class="langs" aria-label="Language"><a href="/rocktally/" hreflang="en" lang="en" aria-current="page">English</a><a href="/rocktally/ar/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/" hreflang="ur" lang="ur">اردو</a></nav>
   </footer>
 </main>
