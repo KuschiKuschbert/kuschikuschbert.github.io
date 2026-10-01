@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<title>سياسة خصوصية Rocktally</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق Rocktally على Android.">
+<link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/privacy/">
+<link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/privacy/">
+<link rel="alternate" hreflang="es" href="https://kuschikuschbert.github.io/rocktally/es/privacy/">
+<link rel="alternate" hreflang="id" href="https://kuschikuschbert.github.io/rocktally/id/privacy/">
+<link rel="alternate" hreflang="ms" href="https://kuschikuschbert.github.io/rocktally/ms/privacy/">
+<link rel="alternate" hreflang="pt" href="https://kuschikuschbert.github.io/rocktally/pt/privacy/">
+<link rel="alternate" hreflang="tr" href="https://kuschikuschbert.github.io/rocktally/tr/privacy/">
+<link rel="alternate" hreflang="ur" href="https://kuschikuschbert.github.io/rocktally/ur/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="canonical" href="https://kuschikuschbert.github.io/rocktally/ar/privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600&family=Outfit:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap">
+<style>
+:root {
+  --bg: #F7F5F0;
+  --surface: #FFFFFF;
+  --line: #DEDAD0;
+  --ink: #1A1917;
+  --muted: #5E5B54;
+  --accent: #B86E00;
+  --track: #ECE8DF;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 "DM Sans", "Noto Naskh Arabic", system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 0 20px;
+}
+main { max-width: 680px; margin: 0 auto; padding-block: 48px 72px; display: flex; flex-direction: column; gap: 36px; }
+header { display: flex; align-items: center; gap: 16px; }
+header svg { flex-shrink: 0; }
+h1, h2 { font-family: Outfit, "DM Sans", "Noto Naskh Arabic", system-ui, sans-serif; font-weight: 600; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.15; letter-spacing: -0.02em; }
+h2 { font-size: 21px; line-height: 1.3; }
+.date { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+section { display: flex; flex-direction: column; gap: 10px; }
+p, ul { margin: 0; }
+ul { padding-inline-start: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.summary strong { font-family: Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+th, td { text-align: start; vertical-align: top; padding-block: 10px; padding-inline: 0 12px; border-bottom: 1px solid var(--line); }
+th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+td:first-child { white-space: nowrap; font-weight: 500; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.contact { font-weight: 500; user-select: all; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
+.langs { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs a:hover, .langs a[aria-current] { color: var(--accent); }
+
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="56" height="56" viewBox="0 0 100 100" role="img" aria-label="شعار Rocktally">
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
+      <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
+      <rect x="70" y="27" width="16" height="46" rx="8" fill="var(--ink)"></rect>
+      <path d="M74 38h8M78 34v8M74 62h8" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round" fill="none"></path>
+      <circle cx="30.8" cy="70.4" r="13" fill="var(--bg)"></circle>
+      <circle cx="30.8" cy="70.4" r="8.5" fill="var(--ink)"></circle>
+    </svg>
+    <div>
+      <h1>سياسة خصوصية Rocktally</h1>
+      <p class="date">سارية من 30 سبتمبر 2026</p>
+      <p class="date">هذه ترجمة للتيسير. إن اختلفت عن النسخة الإنجليزية، فالعبرة <a href="/rocktally/privacy/">بالنسخة الإنجليزية</a>.</p>
+    </div>
+  </header>
+
+  <div class="summary">
+    <strong>باختصار</strong>
+    <p>Rocktally يُبقي أعدادك على هاتفك. لا حساب، ولا إعلانات، ولا تحليلات، ولا تتبّع، ولا يتصل بالإنترنت إطلاقًا. لا نرى بياناتك أبدًا، إلا إن اخترت أن ترسل لنا شيئًا، مثل رسالة بريد أو تقرير تشخيص.</p>
+  </div>
+
+  <section>
+    <h2>من نحن</h2>
+    <p>Rocktally عدّاد لنظام Android من صنع <bdi dir="ltr">Daniel Kuschmierz</bdi>، وهو مطوّر مستقل في روكهامبتون، كوينزلاند، أستراليا. في هذه السياسة، «نحن» تعني المطوّر، و«التطبيق» يعني Rocktally.</p>
+  </section>
+
+  <section>
+    <h2>ما يحفظه التطبيق</h2>
+    <p>كل ما يلي يُحفظ فقط في مساحة التخزين الخاصة بالتطبيق على جهازك:</p>
+    <ul>
+      <li>عدّاداتك: أسماؤها وأعدادها وأهدافها (وهل يبدأ الهدف جولات جديدة أم هو حدّ أقصى) ومحطاتها، والمجموعات التي تضعها فيها (أسماء المجموعات).</li>
+      <li>سجل الضغطات: وقت كل تغيير، وهل كان زيادة أم نقصًا، ومصدره (زر الصوت، لمسة، أداة، إشعار) والعدد بعده.</li>
+      <li>إعداداتك، مثل السمة ولون التمييز ومدة السكون وخيارات الاهتزاز.</li>
+      <li>سجل تشخيص قصير لأحداث العدّ، يُحفظ في الذاكرة فقط ويُمسح عند إغلاق التطبيق.</li>
+      <li>عند استعادة ملف نسخة احتياطية: نسخة مما كان على الهاتف قبلها مباشرة، ليمكن التراجع عن الاستعادة.</li>
+    </ul>
+    <p>التطبيق لا يطلب إذن الإنترنت، لذلك لا يستطيع إرسال أي شيء من هذا إلى أي مكان.</p>
+  </section>
+
+  <section>
+    <h2>ما نجمعه</h2>
+    <p>لا شيء. التطبيق لا يجمع ولا يرسل ولا يبيع ولا يشارك أي بيانات شخصية أو بيانات استخدام، ولا يحتوي على أي أدوات تحليلات أو إعلانات أو تقارير أعطال من أطراف ثالثة.</p>
+    <p>لا يصلنا شيء إلا إن اخترت أنت إرساله، مثل رسالة بريد أو تقرير تشخيص. راجع <a href="#contact-us">إن راسلتنا أو أرسلت تقرير تشخيص</a>.</p>
+  </section>
+
+  <section>
+    <h2>متى تغادر البيانات هاتفك</h2>
+    <p>فقط حين تختار ذلك:</p>
+    <ul>
+      <li><strong>تصدير CSV.</strong> عند تصدير السجل، تختار أنت أين يُحفظ الملف أو أين يُشارَك. ما يحدث له بعد ذلك يعود إليك وإلى التطبيق أو الخدمة التي تختارها.</li>
+      <li><strong>ملف النسخة الاحتياطية.</strong> عند حفظ نسخة احتياطية، تختار أنت مكانها. يقترح التطبيق أولًا مجلد Documents على هاتفك. إن اخترت مجلدًا على الإنترنت مثل Google Drive، فتلك النسخة تحفظها تلك الخدمة في حسابك؛ لا نستطيع رؤيتها ولا حذفها، ومن تشاركها معه يرى أسماء عدّاداتك وسجلك.</li>
+      <li><strong>الحفظ التلقائي.</strong> إن فعّلته (تعرضه عليك «طريقة الاستخدام»)، يكتب التطبيق ملف النسخة الاحتياطية نفسه كل يوم تعدّ فيه إلى <bdi dir="ltr">Documents/Rocktally</bdi> على هاتفك، أو إلى مجلد تختاره، ويحتفظ بآخر 7 نسخ. الملفات في Documents تبقى بعد إلغاء تثبيت التطبيق، ويمكن للتطبيقات الأخرى التي تسمح لها بقراءة ملفاتك أن تقرأها. المجلد على الإنترنت الذي تختاره يعمل كما وُصف أعلاه.</li>
+      <li><strong>تقرير التشخيص.</strong> تستطيع شاشة التشخيص المخفية إنشاء تقرير يساعد في إصلاح مشكلات العدّ. قبل أن تنسخه أو تشاركه، يعرض التطبيق محتواه ويطلب موافقتك. ولا يذهب إلا حيث تلصقه أو ترسله.</li>
+      <li><strong>النسخ الاحتياطي في Android.</strong> إن كان النسخ الاحتياطي في Android مفعّلًا في إعدادات هاتفك، فقد يضم Android عدّادات Rocktally وإعداداته وسجله إلى نسختك الاحتياطية الخاصة على Google أو إلى النقل من هاتف إلى هاتف. هذه النسخة تخص حسابك على Google؛ ولا نستطيع الوصول إليها. يمكنك إيقاف النسخ الاحتياطي من إعدادات هاتفك.</li>
+    </ul>
+  </section>
+
+  <section id="contact-us">
+    <h2>إن راسلتنا أو أرسلت تقرير تشخيص</h2>
+    <p>يحتوي تقرير التشخيص على:</p>
+    <ul>
+      <li>إصدار التطبيق، وهل ثُبّت من Google Play.</li>
+      <li>طراز هاتفك، وإصدار Android، وتحديث الأمان.</li>
+      <li>حجم الشاشة، وحجم الخط، واللغة، وتنسيق الساعة.</li>
+      <li>إعدادات البطارية والإشعارات والعمل في الخلفية الخاصة بـ Rocktally على هاتفك.</li>
+      <li>نوع مخرج الصوت (مكبّر الصوت، أو سلكي، أو Bluetooth) ومستوى صوت الموسيقى.</li>
+      <li>إعدادات Rocktally نفسه، وحالة العدّ، وكيف أُغلق آخر مرة (مثلًا تعطّل مفاجئ، مع الأوقات)، ونتائج الاختبار الموجّه، وسجل التشخيص (الأوقات وأحداث العدّ فقط).</li>
+    </ul>
+    <p>لا يحتوي على أعدادك، ولا أسماء عدّاداتك أو مجموعاتك، ولا سجلك، ولا جهات اتصالك، ولا موقعك، ولا أي حساب. اسم العدّاد الحالي واسم جهاز Bluetooth لا يُدرَجان إلا إن فعّلتهما قبل المشاركة.</p>
+    <p>إن أرسلت إلينا تقريرًا أو رسالة بريد:</p>
+    <ul>
+      <li>نستخدمه فقط للرد عليك وإصلاح المشكلة. لا نبيعه ولا نشاركه، ولا نستخدمه للتسويق، ولا نجمعه مع بيانات أخرى.</li>
+      <li>نحذف التقرير حين ننتهي من المشكلة. ويمكنك أن تطلب منا في أي وقت حذفه، مع رسائلك، قبل ذلك، وسنفعل.</li>
+      <li>تصل الرسائل والتقارير إلى صندوق بريدنا في Gmail، الذي تستضيفه Google.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>الأذونات وسبب الحاجة إليها</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">الإذن</th><th scope="col">السبب</th></tr></thead>
+        <tbody>
+          <tr><td>الإشعارات</td><td>تعرض العدد المباشر أثناء العدّ، مع أزرار لطرح واحد أو تبديل العدّاد أو الإيقاف.</td></tr>
+          <tr><td>خدمة في المقدّمة</td><td>تواصل عدّ ضغطاتك على أزرار الصوت والشاشة مطفأة أو أثناء فتح تطبيق آخر. أنت تشغّلها، وتتوقف من تلقاء نفسها بعد مدة السكون التي تضبطها.</td></tr>
+          <tr><td>التحديثات المباشرة (Android 16 وأحدث)</td><td>تتيح لإشعار العدّ عرض العدد والتقدّم في شريط الحالة ما دام العدّ نشِطًا. لا يُطلب منك إذن، ويمكنك إيقافها من إعدادات Rocktally أو إعدادات Android.</td></tr>
+          <tr><td>الاهتزاز</td><td>يهتز مع كل ضغطة وعند المحطات والأهداف والحدود القصوى، لتعدّ دون أن تنظر.</td></tr>
+          <tr><td>الظهور فوق التطبيقات الأخرى</td><td>اختياري ومتوقف افتراضيًا. يعرض شارة عدد صغيرة فوق التطبيقات الأخرى إن فعّلته.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>حذف بياناتك</h2>
+    <p>احذف عدّادًا في التطبيق لإزالته مع سجله، أو ألغِ تثبيت Rocktally لإزالة كل ما حفظه. ومسح مساحة تخزين التطبيق من إعدادات Android يفعل الشيء نفسه.</p>
+  </section>
+
+  <section>
+    <h2>الأطفال</h2>
+    <p>Rocktally تطبيق عملي موجّه للجمهور العام. لا يجمع أي بيانات من أي أحد، بما في ذلك الأطفال.</p>
+  </section>
+
+  <section>
+    <h2>التغييرات على هذه السياسة</h2>
+    <p>إن غيّر التطبيق يومًا طريقة تعامله مع البيانات، فستُحدَّث هذه الصفحة أولًا ويتغير تاريخ السريان أعلاه.</p>
+  </section>
+
+  <section>
+    <h2>التواصل</h2>
+    <p>للأسئلة عن الخصوصية: <span class="contact"><bdi dir="ltr">rocktallyapp@gmail.com</bdi></span></p>
+  </section>
+
+  <footer>Rocktally لنظام Android · صُنع في روكهامبتون، كوينزلاند
+    <nav class="langs" aria-label="اللغة"><a href="/rocktally/privacy/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/privacy/" hreflang="ar" lang="ar" aria-current="page">العربية</a><a href="/rocktally/de/privacy/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/privacy/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/privacy/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/privacy/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/privacy/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/privacy/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/privacy/" hreflang="ur" lang="ur">اردو</a></nav>
+  </footer>
+</main>
+</body>
+</html>

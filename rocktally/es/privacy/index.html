@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<title>Política de privacidad de Rocktally</title>
+<meta name="description" content="Política de privacidad de la app Rocktally para Android.">
+<link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/privacy/">
+<link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/privacy/">
+<link rel="alternate" hreflang="es" href="https://kuschikuschbert.github.io/rocktally/es/privacy/">
+<link rel="alternate" hreflang="id" href="https://kuschikuschbert.github.io/rocktally/id/privacy/">
+<link rel="alternate" hreflang="ms" href="https://kuschikuschbert.github.io/rocktally/ms/privacy/">
+<link rel="alternate" hreflang="pt" href="https://kuschikuschbert.github.io/rocktally/pt/privacy/">
+<link rel="alternate" hreflang="tr" href="https://kuschikuschbert.github.io/rocktally/tr/privacy/">
+<link rel="alternate" hreflang="ur" href="https://kuschikuschbert.github.io/rocktally/ur/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="canonical" href="https://kuschikuschbert.github.io/rocktally/es/privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap">
+<style>
+:root {
+  --bg: #F7F5F0;
+  --surface: #FFFFFF;
+  --line: #DEDAD0;
+  --ink: #1A1917;
+  --muted: #5E5B54;
+  --accent: #B86E00;
+  --track: #ECE8DF;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 0 20px;
+}
+main { max-width: 680px; margin: 0 auto; padding-block: 48px 72px; display: flex; flex-direction: column; gap: 36px; }
+header { display: flex; align-items: center; gap: 16px; }
+header svg { flex-shrink: 0; }
+h1, h2 { font-family: Outfit, "DM Sans", system-ui, sans-serif; font-weight: 600; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.15; letter-spacing: -0.02em; }
+h2 { font-size: 21px; line-height: 1.3; }
+.date { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+section { display: flex; flex-direction: column; gap: 10px; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.summary strong { font-family: Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+td:first-child { white-space: nowrap; font-weight: 500; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.contact { font-weight: 500; user-select: all; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
+.langs { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs a:hover, .langs a[aria-current] { color: var(--accent); }
+
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="56" height="56" viewBox="0 0 100 100" role="img" aria-label="Logotipo de Rocktally">
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
+      <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
+      <rect x="70" y="27" width="16" height="46" rx="8" fill="var(--ink)"></rect>
+      <path d="M74 38h8M78 34v8M74 62h8" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round" fill="none"></path>
+      <circle cx="30.8" cy="70.4" r="13" fill="var(--bg)"></circle>
+      <circle cx="30.8" cy="70.4" r="8.5" fill="var(--ink)"></circle>
+    </svg>
+    <div>
+      <h1>Política de privacidad de Rocktally</h1>
+      <p class="date">En vigor desde el 30 de septiembre de 2026</p>
+      <p class="date">Esta es una traducción para tu comodidad. Si difiere de la <a href="/rocktally/privacy/">versión en inglés</a>, se aplica la versión en inglés.</p>
+    </div>
+  </header>
+
+  <div class="summary">
+    <strong>En resumen</strong>
+    <p>Rocktally guarda tus cuentas en tu teléfono. No usa cuentas de usuario, anuncios, analíticas ni seguimiento, y no se conecta a internet en absoluto. Nunca vemos tus datos, salvo que decidas enviarnos algo, como un correo o un informe de diagnóstico.</p>
+  </div>
+
+  <section>
+    <h2>Quiénes somos</h2>
+    <p>Rocktally es un contador para Android creado por Daniel Kuschmierz, un desarrollador independiente de Rockhampton, Queensland, Australia. En esta política, «nosotros» significa el desarrollador y «la app» significa Rocktally.</p>
+  </section>
+
+  <section>
+    <h2>Qué guarda la app</h2>
+    <p>Todo lo siguiente se guarda solo en el almacenamiento privado de la app en tu dispositivo:</p>
+    <ul>
+      <li>Tus contadores: sus nombres, cuentas, objetivos (y si un objetivo empieza nuevas rondas o es un límite) e hitos, y los grupos en los que los pones (nombres de los grupos).</li>
+      <li>Historial de pulsaciones: la hora de cada cambio, si subió o bajó, de dónde vino (botón de volumen, toque, widget, notificación) y la cuenta después del cambio.</li>
+      <li>Tus ajustes, como el tema, el color de acento, el tiempo de reposo y las opciones de vibración.</li>
+      <li>Un breve registro de diagnóstico de los eventos de conteo, guardado solo en memoria y borrado cuando se cierra la app.</li>
+      <li>Cuando restauras un archivo de copia de seguridad: una copia de lo que había en el teléfono justo antes, para que la restauración se pueda deshacer.</li>
+    </ul>
+    <p>La app no pide el permiso de internet, así que la app no puede enviar nada de esto a ninguna parte.</p>
+  </section>
+
+  <section>
+    <h2>Qué recopilamos</h2>
+    <p>Nada. La app no recopila, envía, vende ni comparte ningún dato personal o de uso, y no incluye herramientas de terceros de analíticas, publicidad ni informes de fallos.</p>
+    <p>Solo nos llega algo si decides enviarlo, por ejemplo un correo o un informe de diagnóstico. Consulta <a href="#contact-us">Si nos escribes o nos envías un informe de diagnóstico</a>.</p>
+  </section>
+
+  <section>
+    <h2>Cuándo salen datos de tu teléfono</h2>
+    <p>Solo cuando tú lo decides:</p>
+    <ul>
+      <li><strong>Exportación a CSV.</strong> Cuando exportas el historial, eliges dónde se guarda o se comparte el archivo. Lo que pase con él después depende de ti y de la app o el servicio que elijas.</li>
+      <li><strong>Archivo de copia de seguridad.</strong> Cuando guardas una copia de seguridad, eliges dónde va. La app sugiere primero la carpeta Documents de tu teléfono. Si eliges una carpeta en línea como Google Drive, ese servicio guarda la copia en tu cuenta: no podemos verla ni eliminarla, y cualquier persona con quien la compartas podrá ver los nombres de tus contadores y tu historial.</li>
+      <li><strong>Guardado automático.</strong> Si lo activas (Cómo usar te lo ofrece), cada día que cuentas, la app guarda el mismo archivo de copia de seguridad en Documents/Rocktally de tu teléfono, o en una carpeta que elijas, y conserva las 7 copias más recientes. Los archivos de Documents se conservan después de desinstalar la app, y otras apps a las que permitas leer tus archivos pueden leerlos. Una carpeta en línea que elijas funciona como se describe arriba.</li>
+      <li><strong>Informe de diagnóstico.</strong> La pantalla oculta de diagnóstico puede crear un informe para ayudar a resolver problemas de conteo. Antes de que lo copies o lo compartas, la app te muestra lo que contiene y te pide que aceptes. Solo va a donde tú lo pegues o lo envíes.</li>
+      <li><strong>Copia de seguridad de Android.</strong> Si la copia de seguridad de Android está activada en los ajustes de tu teléfono, Android puede incluir los contadores, los ajustes y el historial de Rocktally en tu propia copia de seguridad de Google o en una transferencia de teléfono a teléfono. Esa copia pertenece a tu cuenta de Google: no podemos acceder a ella. Puedes desactivar la copia de seguridad en los ajustes de tu teléfono.</li>
+    </ul>
+  </section>
+
+  <section id="contact-us">
+    <h2>Si nos escribes o nos envías un informe de diagnóstico</h2>
+    <p>Un informe de diagnóstico contiene:</p>
+    <ul>
+      <li>La versión de la app y si se instaló desde Google Play.</li>
+      <li>El modelo de tu teléfono, la versión de Android y el parche de seguridad.</li>
+      <li>El tamaño de pantalla, el tamaño de fuente, el idioma y el formato de hora.</li>
+      <li>Los ajustes de batería, notificaciones y segundo plano de Rocktally en tu teléfono.</li>
+      <li>El tipo de salida de audio (altavoz, con cable o Bluetooth) y el volumen de la música.</li>
+      <li>Los ajustes propios de Rocktally, su estado de conteo, cómo se cerró la última vez (por ejemplo, un fallo, con las horas), los resultados de la prueba guiada y el registro de diagnóstico (solo horas y eventos de conteo).</li>
+    </ul>
+    <p>No contiene tus cuentas, los nombres de tus contadores o grupos, tu historial, tus contactos, tu ubicación ni ninguna cuenta de usuario. El nombre del contador en uso y el nombre de un dispositivo Bluetooth no se incluyen, salvo que los actives antes de compartir.</p>
+    <p>Si nos envías un informe o un correo:</p>
+    <ul>
+      <li>Lo usamos solo para responderte y resolver el problema. No lo vendemos ni lo compartimos, no lo usamos para marketing y no lo combinamos con otros datos.</li>
+      <li>Eliminamos el informe cuando terminamos de ocuparnos del problema. Pídenoslo cuando quieras y lo eliminaremos antes, junto con tus correos.</li>
+      <li>Los correos y los informes llegan a nuestra bandeja de entrada de Gmail, alojada por Google.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Permisos y por qué se necesitan</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Permiso</th><th scope="col">Para qué</th></tr></thead>
+        <tbody>
+          <tr><td>Notificaciones</td><td>Muestra la cuenta en vivo mientras cuentas, con botones para restar uno, cambiar de contador o parar.</td></tr>
+          <tr><td>Servicio en primer plano</td><td>Sigue contando las pulsaciones de los botones de volumen con la pantalla apagada o con otra app abierta. Tú lo inicias y se detiene solo tras el tiempo sin pulsaciones que configures.</td></tr>
+          <tr><td>Actualizaciones en vivo (Android 16 y posteriores)</td><td>Permite que la notificación de conteo muestre la cuenta y el progreso en la barra de estado mientras el conteo está activo. No se pide permiso: puedes desactivarlo en los ajustes de Rocktally o de Android.</td></tr>
+          <tr><td>Vibración</td><td>Vibra con cada pulsación, hito, objetivo y límite, para que puedas contar sin mirar.</td></tr>
+          <tr><td>Mostrar sobre otras apps</td><td>Opcional y desactivado de forma predeterminada. Si lo activas, muestra sobre otras apps una pequeña cápsula con la cuenta.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Eliminar tus datos</h2>
+    <p>Elimina un contador en la app para quitarlo junto con su historial, o desinstala Rocktally para quitar todo lo que guardó. Borrar el almacenamiento de la app en los ajustes de Android hace lo mismo.</p>
+  </section>
+
+  <section>
+    <h2>Niños</h2>
+    <p>Rocktally es una herramienta para el público en general. No recopila datos de nadie, tampoco de niños.</p>
+  </section>
+
+  <section>
+    <h2>Cambios en esta política</h2>
+    <p>Si la app cambia alguna vez cómo trata los datos, primero se actualizará esta página y cambiará la fecha de entrada en vigor de arriba.</p>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>Preguntas sobre privacidad: <span class="contact">rocktallyapp@gmail.com</span></p>
+  </section>
+
+  <footer>Rocktally para Android · Hecho en Rockhampton, Queensland
+    <nav class="langs" aria-label="Idioma"><a href="/rocktally/privacy/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/privacy/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/privacy/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/privacy/" hreflang="es" lang="es" aria-current="page">Español</a><a href="/rocktally/id/privacy/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/privacy/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/rocktally/pt/privacy/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/privacy/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/privacy/" hreflang="ur" lang="ur">اردو</a></nav>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<title>Dasar Privasi Rocktally</title>
+<meta name="description" content="Dasar privasi untuk apl Android Rocktally.">
+<link rel="alternate" hreflang="en" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="alternate" hreflang="ar" href="https://kuschikuschbert.github.io/rocktally/ar/privacy/">
+<link rel="alternate" hreflang="de" href="https://kuschikuschbert.github.io/rocktally/de/privacy/">
+<link rel="alternate" hreflang="es" href="https://kuschikuschbert.github.io/rocktally/es/privacy/">
+<link rel="alternate" hreflang="id" href="https://kuschikuschbert.github.io/rocktally/id/privacy/">
+<link rel="alternate" hreflang="ms" href="https://kuschikuschbert.github.io/rocktally/ms/privacy/">
+<link rel="alternate" hreflang="pt" href="https://kuschikuschbert.github.io/rocktally/pt/privacy/">
+<link rel="alternate" hreflang="tr" href="https://kuschikuschbert.github.io/rocktally/tr/privacy/">
+<link rel="alternate" hreflang="ur" href="https://kuschikuschbert.github.io/rocktally/ur/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://kuschikuschbert.github.io/rocktally/privacy/">
+<link rel="canonical" href="https://kuschikuschbert.github.io/rocktally/ms/privacy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap">
+<style>
+:root {
+  --bg: #F7F5F0;
+  --surface: #FFFFFF;
+  --line: #DEDAD0;
+  --ink: #1A1917;
+  --muted: #5E5B54;
+  --accent: #B86E00;
+  --track: #ECE8DF;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E0E11; --surface: #17171B; --line: #2C2C33; --ink: #F2F0EA; --muted: #A09FA8; --accent: #FFB547; --track: #2A2A31;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding: 0 20px;
+}
+main { max-width: 680px; margin: 0 auto; padding-block: 48px 72px; display: flex; flex-direction: column; gap: 36px; }
+header { display: flex; align-items: center; gap: 16px; }
+header svg { flex-shrink: 0; }
+h1, h2 { font-family: Outfit, "DM Sans", system-ui, sans-serif; font-weight: 600; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.15; letter-spacing: -0.02em; }
+h2 { font-size: 21px; line-height: 1.3; }
+.date { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+section { display: flex; flex-direction: column; gap: 10px; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.summary strong { font-family: Outfit, "DM Sans", sans-serif; font-weight: 600; font-size: 18px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }
+td:first-child { white-space: nowrap; font-weight: 500; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.contact { font-weight: 500; user-select: all; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
+.langs { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs a:hover, .langs a[aria-current] { color: var(--accent); }
+
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="56" height="56" viewBox="0 0 100 100" role="img" aria-label="Logo Rocktally">
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--track)" stroke-width="10"></circle>
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="109 176" transform="rotate(-90 50 50)"></circle>
+      <rect x="66" y="23" width="24" height="54" rx="12" fill="var(--bg)"></rect>
+      <rect x="70" y="27" width="16" height="46" rx="8" fill="var(--ink)"></rect>
+      <path d="M74 38h8M78 34v8M74 62h8" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round" fill="none"></path>
+      <circle cx="30.8" cy="70.4" r="13" fill="var(--bg)"></circle>
+      <circle cx="30.8" cy="70.4" r="8.5" fill="var(--ink)"></circle>
+    </svg>
+    <div>
+      <h1>Dasar Privasi Rocktally</h1>
+      <p class="date">Berkuat kuasa 30 September 2026</p>
+      <p class="date">Ini ialah terjemahan untuk kemudahan. Jika ia berbeza daripada versi bahasa Inggeris, <a href="/rocktally/privacy/">versi bahasa Inggeris</a> yang terpakai.</p>
+    </div>
+  </header>
+
+  <div class="summary">
+    <strong>Ringkasnya</strong>
+    <p>Rocktally menyimpan kiraan anda pada telefon anda. Ia tidak mempunyai akaun, iklan, analitik atau penjejakan, dan ia langsung tidak bersambung ke internet. Kami tidak pernah melihat data anda, kecuali jika anda memilih untuk menghantar sesuatu kepada kami, seperti e-mel atau laporan diagnostik.</p>
+  </div>
+
+  <section>
+    <h2>Siapa kami</h2>
+    <p>Rocktally ialah apl pembilang Android yang dibuat oleh Daniel Kuschmierz, pembangun bebas di Rockhampton, Queensland, Australia. Dalam dasar ini, "kami" bermaksud pembangun dan "apl" bermaksud Rocktally.</p>
+  </section>
+
+  <section>
+    <h2>Apa yang disimpan oleh apl</h2>
+    <p>Semua maklumat di bawah disimpan hanya dalam storan peribadi apl pada peranti anda:</p>
+    <ul>
+      <li>Pembilang anda: nama, kiraan, sasaran (dan sama ada sasaran memulakan pusingan baharu atau merupakan had) dan pencapaian, serta kumpulan tempat anda meletakkannya (nama kumpulan).</li>
+      <li>Sejarah tekanan: masa setiap perubahan, sama ada naik atau turun, dari mana ia datang (butang kelantangan, ketikan, widget, pemberitahuan) dan kiraan selepasnya.</li>
+      <li>Tetapan anda, seperti tema, warna aksen, masa tidur dan pilihan getaran.</li>
+      <li>Log diagnostik ringkas bagi peristiwa pengiraan, disimpan dalam memori sahaja dan dikosongkan apabila apl ditutup.</li>
+      <li>Apabila anda memulihkan fail sandaran: salinan apa yang ada pada telefon sejurus sebelumnya, supaya pemulihan itu boleh dibuat asal.</li>
+    </ul>
+    <p>Apl ini tidak meminta kebenaran internet, jadi apl tidak dapat menghantar mana-mana data ini ke mana-mana.</p>
+  </section>
+
+  <section>
+    <h2>Apa yang kami kumpul</h2>
+    <p>Tiada apa-apa. Apl ini tidak mengumpul, menghantar, menjual atau berkongsi sebarang data peribadi atau data penggunaan, dan tiada alat analitik, pengiklanan atau laporan ranap pihak ketiga di dalamnya.</p>
+    <p>Satu-satunya cara apa-apa sampai kepada kami ialah jika anda memilih untuk menghantarnya, contohnya e-mel atau laporan diagnostik. Lihat <a href="#contact-us">Jika anda menghantar e-mel atau laporan diagnostik kepada kami</a>.</p>
+  </section>
+
+  <section>
+    <h2>Apabila data keluar dari telefon anda</h2>
+    <p>Hanya apabila anda memilih:</p>
+    <ul>
+      <li><strong>Eksport CSV.</strong> Apabila anda mengeksport sejarah, anda pilih tempat fail itu disimpan atau dikongsi. Apa yang berlaku kepadanya selepas itu bergantung pada anda dan apl atau perkhidmatan yang anda pilih.</li>
+      <li><strong>Fail sandaran.</strong> Apabila anda menyimpan sandaran, anda pilih ke mana ia pergi. Apl mencadangkan folder Documents pada telefon anda dahulu. Jika anda memilih folder dalam talian seperti Google Drive, salinan itu disimpan oleh perkhidmatan tersebut di bawah akaun anda; kami tidak dapat melihat atau memadamnya, dan sesiapa yang anda kongsikan dengannya boleh melihat nama pembilang dan sejarah anda.</li>
+      <li><strong>Simpan automatik.</strong> Jika anda menghidupkannya (Cara guna menawarkannya), apl menulis fail sandaran yang sama setiap hari anda mengira ke Documents/Rocktally pada telefon anda, atau folder yang anda pilih, dan menyimpan 7 fail terakhir. Fail dalam Documents kekal selepas anda nyahpasang apl, dan apl lain yang anda benarkan membaca fail anda boleh membacanya. Folder dalam talian yang anda pilih berfungsi seperti yang diterangkan di atas.</li>
+      <li><strong>Laporan diagnostik.</strong> Skrin diagnostik tersembunyi boleh menyediakan laporan untuk membantu membaiki masalah pengiraan. Sebelum anda menyalin atau berkongsinya, apl menunjukkan kandungannya dan meminta persetujuan anda. Ia hanya pergi ke tempat anda menampal atau menghantarnya.</li>
+      <li><strong>Sandaran Android.</strong> Jika sandaran Android dihidupkan dalam tetapan telefon anda, Android mungkin memasukkan pembilang, tetapan dan sejarah Rocktally dalam sandaran Google anda sendiri atau pemindahan dari telefon ke telefon. Sandaran itu milik akaun Google anda; kami tidak dapat mengaksesnya. Anda boleh mematikan sandaran dalam tetapan telefon anda.</li>
+    </ul>
+  </section>
+
+  <section id="contact-us">
+    <h2>Jika anda menghantar e-mel atau laporan diagnostik kepada kami</h2>
+    <p>Laporan diagnostik mengandungi:</p>
+    <ul>
+      <li>Versi apl dan sama ada ia datang dari Google Play.</li>
+      <li>Model telefon anda, versi Android dan tampung keselamatan.</li>
+      <li>Saiz skrin, saiz fon, bahasa dan format jam.</li>
+      <li>Tetapan bateri, pemberitahuan dan latar belakang Rocktally pada telefon anda.</li>
+      <li>Jenis output audio (pembesar suara, berwayar atau Bluetooth) dan kelantangan muzik.</li>
+      <li>Tetapan Rocktally sendiri, keadaan pengiraannya, cara apl ditutup kali terakhir (contohnya ranap, bersama masanya), keputusan ujian berpandu dan log diagnostik (masa dan peristiwa pengiraan sahaja).</li>
+    </ul>
+    <p>Ia tidak mengandungi kiraan anda, nama pembilang atau kumpulan anda, sejarah anda, kenalan, lokasi atau sebarang akaun. Nama pembilang yang digunakan dan nama peranti Bluetooth tidak dimasukkan melainkan anda menghidupkannya sebelum berkongsi.</p>
+    <p>Jika anda menghantar laporan atau e-mel kepada kami:</p>
+    <ul>
+      <li>Kami menggunakannya hanya untuk membalas anda dan membaiki masalah itu. Kami tidak menjual atau berkongsinya, menggunakannya untuk pemasaran atau menggabungkannya dengan data lain.</li>
+      <li>Kami memadamkan laporan itu apabila kami selesai menangani masalah tersebut. Anda boleh meminta pada bila-bila masa, dan kami akan memadamkan laporan itu serta e-mel anda lebih awal.</li>
+      <li>E-mel dan laporan diterima dalam peti masuk Gmail kami, yang dihoskan oleh Google.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Kebenaran dan sebab ia diperlukan</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Kebenaran</th><th scope="col">Sebab</th></tr></thead>
+        <tbody>
+          <tr><td>Pemberitahuan</td><td>Menunjukkan kiraan langsung semasa mengira, dengan butang untuk tolak satu, tukar pembilang atau berhenti.</td></tr>
+          <tr><td>Perkhidmatan latar depan</td><td>Terus mengira tekanan butang kelantangan anda semasa skrin mati atau apl lain dibuka. Anda yang memulakannya, dan ia berhenti sendiri selepas tempoh senyap yang anda tetapkan.</td></tr>
+          <tr><td>Kemas kini langsung (Android 16 dan lebih baharu)</td><td>Membolehkan pemberitahuan pengiraan menunjukkan kiraan dan kemajuan dalam bar status semasa pengiraan aktif. Tiada gesaan; anda boleh mematikannya dalam tetapan Rocktally atau tetapan Android.</td></tr>
+          <tr><td>Getaran</td><td>Memberikan getaran bagi setiap tekanan, pencapaian, sasaran dan had, supaya anda boleh mengira tanpa melihat.</td></tr>
+          <tr><td>Paparkan di atas apl lain</td><td>Pilihan dan dimatikan secara lalai. Menunjukkan pil kiraan kecil di atas apl lain jika anda menghidupkannya.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Memadam data anda</h2>
+    <p>Padam pembilang dalam apl untuk membuangnya bersama sejarahnya, atau nyahpasang Rocktally untuk membuang semua yang disimpannya. Mengosongkan storan apl dalam tetapan Android juga memberi kesan yang sama.</p>
+  </section>
+
+  <section>
+    <h2>Kanak-kanak</h2>
+    <p>Rocktally ialah utiliti untuk khalayak umum. Ia tidak mengumpul data daripada sesiapa, termasuk kanak-kanak.</p>
+  </section>
+
+  <section>
+    <h2>Perubahan pada dasar ini</h2>
+    <p>Jika apl ini pada bila-bila masa mengubah cara ia mengendalikan data, halaman ini akan dikemas kini dahulu dan tarikh berkuat kuasa di atas akan berubah.</p>
+  </section>
+
+  <section>
+    <h2>Hubungi</h2>
+    <p>Soalan tentang privasi: <span class="contact">rocktallyapp@gmail.com</span></p>
+  </section>
+
+  <footer>Rocktally untuk Android · Dibuat di Rockhampton, Queensland
+    <nav class="langs" aria-label="Bahasa"><a href="/rocktally/privacy/" hreflang="en" lang="en">English</a><a href="/rocktally/ar/privacy/" hreflang="ar" lang="ar">العربية</a><a href="/rocktally/de/privacy/" hreflang="de" lang="de">Deutsch</a><a href="/rocktally/es/privacy/" hreflang="es" lang="es">Español</a><a href="/rocktally/id/privacy/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/rocktally/ms/privacy/" hreflang="ms" lang="ms" aria-current="page">Bahasa Melayu</a><a href="/rocktally/pt/privacy/" hreflang="pt" lang="pt">Português</a><a href="/rocktally/tr/privacy/" hreflang="tr" lang="tr">Türkçe</a><a href="/rocktally/ur/privacy/" hreflang="ur" lang="ur">اردو</a></nav>
+  </footer>
+</main>
+</body>
+</html>
